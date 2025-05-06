@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 73, 84);
+    gap:20px;
+    padding: 10px;
+}
+
+.menu-item {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(5, 103, 120);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: rgb(9, 142, 166);
+}
+
+.dr-pepper-logo:hover {
+    background-color: rgb(5, 103, 120);
+}
+
+footer {
+    background-color: rgb(132, 19, 46);
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info, .socials-container {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+}
+
+.contact-info h3, .socials-container {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #ffcc00;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #ffcc00;
+}
+
+.socials-container {
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    place-items: center;
+    box-shadow: inset
+}
+
+.socials-container a {
+    background-color: white;
+    padding: 1em;
+    border-radius: 50%;
+}
+
+.socials-container a svg {
+    height: 32px;
+}
+
+.socials-container a:hover{
+    background-color: var(--accent-color);
+    fill: white;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding: 10px;
+}
+
+.flavor-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-self: center;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.flavor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.flavor :hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.flavor img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.flavor p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+#pop-up-background{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.flavor-detailed {
+    display: flex;
+    background-color: lightgray;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100rem;
+    height: 45rem;
+    border-radius: 20px;
+}
+
+.flavor-detailed-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+#dr-pepper-name {
+    font-size: xx-large;
+    margin-bottom: 2rem;
+}
+
+#dr-pepper-description {
+    font-size: x-large;
+}
+
+#variable-pepper-image {
+    height: 40rem;
+    width: 20rem;
+}
+
+.close-button {
+    float: right;
+    font-size: xx-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cookie-banner{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(4, 73, 84);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+.cookie-buttons{
+    margin-top: 2rem;
+}
+  
+.cookie-banner button{
+    margin-left: 15px;
+    padding: 10px 20px;
+    width: 23rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: rgb(5, 103, 120);
+    font-size: medium;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
